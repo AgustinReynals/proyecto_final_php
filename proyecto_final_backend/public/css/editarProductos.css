@@ -1,0 +1,60 @@
+html,body{
+    width: 100%;
+    max-width: 1320px;
+    height: 100vh;
+    display: block;
+    background-image: url(../img/fondo1.png);
+    background-size: cover;   
+    background-position: center;
+    background-attachment: fixed;
+    align-items: center; 
+    justify-content: center;
+}
+
+.page-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 20px 0px 20px;
+    background-color: rgb(255, 200, 200);
+    padding: 20px;
+    border-radius: 40px;
+    font-size: 30px;
+}
+form{
+    width: 100vh;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 450px 450px;
+    gap: 25px;
+    justify-content: center;
+}
+form div{
+ display:flex;   
+ flex-direction: column;
+ margin-bottom: 30px;
+ font-size: 20px;
+}
+
+.edit-img{
+    display: inline;
+    
+}
+input{
+    height: 40px;
+    font-size: 20px;
+}
+
+.button{
+    margin-top:23px;
+    background-color: #d64040;
+    width: 455px;
+    height: 45px;
+    /* margin-left: 65px; */
+    /* margin-bottom: 20px; */
+    font-weight: 700;
+}
+.button:hover{
+    background-color: #682323;
+}

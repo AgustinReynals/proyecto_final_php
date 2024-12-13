@@ -1,0 +1,71 @@
+html,body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: "Open Sans";
+    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+
+}
+a, p{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+a:hover{
+    text-decoration: underline;
+    
+}
+
+.page-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.561) 0%, #fad0c48a 100%), url("../img/fondo1.png");
+     
+    background-size: cover;
+    background-position: center;
+    
+
+}
+.form-container{
+    display: flex;
+    text-align: center;
+    padding: 10px;
+    border: solid 1px rgb(255,255,255,0.2);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
+    box-shadow: 0 8px 32px rgb(0,0,0,0.37);
+    color: white;
+}
+.form-container form{
+    margin: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+input{
+    margin-bottom: 20px;
+    width: 400px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.123);
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+}
+.button-login{
+    background-color: rgb(45, 44, 56);
+    border-radius: 30px;
+}
+.button-login:hover{
+    background-color: rgb(57, 56, 63);
+}
+.derive-register{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}

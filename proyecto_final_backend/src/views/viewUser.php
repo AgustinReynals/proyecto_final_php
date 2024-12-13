@@ -106,7 +106,7 @@
                 $query = "select id,nombreProducto,precioProducto,cantidad,imagen,descripcion from productos;";
                 $resultado = mysqli_query($conexion,$query);
                 while ($row = mysqli_fetch_row($resultado)) {
-                    if ($row[2] > 0) {
+                    if ($row[3] > 0) {
                         echo '<div class="card">
                                 <img src="' . $row[4] . '" alt="' . $row[1] . '">
                                 <div class="card-content">
@@ -119,11 +119,11 @@
                     } else {
                         echo '<div class="card agotado">
                                 <div class="agotado-icon">×</div>
-                                <img src="' . $row[3] . '" alt="' . $row[0] . '">
+                                <img src="' . $row[4] . '" alt="' . $row[1] . '">
                                 <div class="card-content">
-                                    <h2 class="card-title">' . $row[0] . '</h2>
-                                    <p class="card-description">' . $row[4] . '</p>
-                                    <h3>$' . $row[1] . '</h3>
+                                    <h2 class="card-title">' . $row[1] . '</h2>
+                                    <p class="card-description">' . $row[5] . '</p>
+                                    <h3>$' . $row[2] . '</h3>
                                     <button class="card-button agotado">Agotado</button>
                                 </div>
                               </div>';
